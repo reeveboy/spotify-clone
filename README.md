@@ -23,17 +23,22 @@ Accept all the terms and conditions
 
 After logging in click on Create an App, give it a name and description and click on create.
 
-Now you will be shown your Client Id and Client Secret which you will need to paste into the .env file in the repective variables
+Now you will be shown your Client Id and Client Secret which you will need to paste into the .env file of server and client in the repective variables
   
 Next Click on EDIT SETTINGS and add a Redirect URI. In this case as we are in development, type "http://localhost:3000" and click on add and the save.
-You'll also need to copy this Redirect URi to the .env file
+You'll also need to copy this Redirect URI to the .env file
 
-After these steps your .env file should look something like this:
+After these steps your .env file in the server should look something like this:
 ```.env
 REDIRECT_URI=http://localhost:3000
 CLIENT_ID=gs67256
 CLIENT_SECRET=sajh2618
 ```
+and the .env file in the client should look like this:
+```.env
+REACT_APP_MY_REDIRECT_URI=http://localhost:3000
+REACT_APP_MY_CLIENT_ID=gs67256
+```  
 
 ## Usage  
 Finally run the server and the client:
