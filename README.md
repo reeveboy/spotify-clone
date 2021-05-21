@@ -16,3 +16,13 @@ cd server
 npm install
 ```
 
+Finally run the server and the client:
+```bash
+cd server
+yarn start
+```
+
+```bash
+cd client
+yarn start
+```
