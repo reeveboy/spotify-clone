@@ -16,6 +16,9 @@ cd server
 npm install
 ```
 
+## Setting up Auth for SpotifyAPI
+Go to -> <a href="#">spotify <a/> 
+
 Finally run the server and the client:
 ```bash
 cd server
