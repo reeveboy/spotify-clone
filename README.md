@@ -17,8 +17,25 @@ npm install
 ```
 
 ## Setting up Auth for SpotifyAPI
-Go to -> <a href="#">spotify <a/> 
+Go to -> <a href="https://developer.spotify.com/dashboard/">https://developer.spotify.com/dashboard/ <a/> 
+Log into your Spotify Account or Create a new one.
+Accept all the terms and conditions
 
+After logging in click on Create an App, give it a name and description and click on create.
+
+Now you will be shown your Client Id and Client Secret which you will need to paste into the .env file in the repective variables
+  
+Next Click on EDIT SETTINGS and add a Redirect URI. In this case as we are in development, type "http://localhost:3000" and click on add and the save.
+You'll also need to copy this Redirect URi to the .env file
+
+After these steps your .env file should look something like this:
+```.env
+REDIRECT_URI=http://localhost:3000
+CLIENT_ID=gs67256
+CLIENT_SECRET=sajh2618
+```
+
+## Usage  
 Finally run the server and the client:
 ```bash
 cd server
